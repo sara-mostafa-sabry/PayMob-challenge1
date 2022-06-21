@@ -1,0 +1,29 @@
+1- Which of the following correctly describes the benefits of using EC2 Spot Instances over EC2 On-Demand instances?
+  A) Spot Instances come at a reduced cost.
+
+2- Three of the following services are available at no additional cost except for the cost of the AWS resources they help to manage. The fourth one is a paid service. Which is the paid service?
+  C) Batch
+
+3- How are CPU Credits used in EC2 T2 Instances?
+  D) A set of CPU Credits is received each day and the credits are exchangeable for an increased allocation of operating memory.
+
+4- Which resources can be specified in the AWS Serverless Application Model (AWS SAM) template?
+  A) Lambda Functions, API Gateways, DynamoDB tables.
+
+5- What is the relationship between Regions and Availability Zones in Amazon EC2?
+  B) Each Region is a separate physical location and is further divided into Availability Zones.
+
+6- Which AWS service provides the most cost-optimal way to store large files that are infrequently accessed when the access time is not a priority?
+  B) Glacier
+
+7- Which of the following is a correct ARN value indicating a user with username John under account with id 123456789012?
+  D) arn:aws:iam::123456789012:user/John
+
+8- What AWS service provides a history of actions taken by users via the AWS Management Console?
+  B) Cloudtrail
+
+9- Which of the following use cases cannot be realised with AWS Cloudfront?
+  D) Optimizing performance of write and read operations against AWS RDS.
+
+10- What is the role of a bastion host instance?
+  C) Providing secure access to a private network from an external network

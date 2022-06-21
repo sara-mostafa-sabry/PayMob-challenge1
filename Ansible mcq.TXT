@@ -1,0 +1,37 @@
+Ansible:
+
+1- How can an Ansible inventory be built and stored? 
+   C)In either a static or a dynamically generated list of hosts.
+
+2- Which of the following variable names is invalid? 
+   B) variable-name
+   C) variable.name
+   D) 1variable
+
+3- How can a variable be used in a template or a task?
+   C) "Hello {{ user_name }}"
+
+4- In what language is Ansible written?
+   D)JavaScript
+
+5- To execute Ansible you must install it on:
+   B) a computer on which you execute the command.
+
+6- What module can be used to copy a file from the local machine to the node? 
+   B) copy
+
+7- When is a handler executed?
+   B) Only if a task with `notifiy` finishes with status `changed`.
+
+8- What are the possible formats of the inventory file?
+   A) YAML
+
+   B) INI
+
+9- What can be stored in the inventory file?
+  A) Destination host lists.
+
+  B) Group definitions.
+
+10- A Tag can be defined inside:
+  C) task

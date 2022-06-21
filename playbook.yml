@@ -1,0 +1,29 @@
+---
+- name: Install and Configure nginx webserver
+  hosts: all 
+  remote_user: root
+  become: True
+  tasks:
+    - name: install nginx
+      apt: name=nginx update_cache=yes
+
+    - name: copy nginx config file
+      copy: src=/project/application.conf dest=/etc/nginx/sites-enabled/application.conf
+
+    - name: extract the project files
+      ansible.builtin.unarchive:
+        src: /project/www.tar.gz
+        dest: /var/www/html
+
+    - name: start nginx
+      service:
+        name: nginx
+        state: started
+ 
+    - name: debuging module
+      shell: ps aux
+      register: output
+
+    - name: show the value of output
+      debug: var=output
+  
